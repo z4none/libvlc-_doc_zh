@@ -1,4 +1,4 @@
-## change_integer_range {#change_integer_range}
+## change_integer_range 
 
 ```c
 void change_integer_range(int i_subcategory, int range);
@@ -16,7 +16,7 @@ void change_integer_range(int i_subcategory, int range);
 
 ### 函数返回值
 该函数没有返回值。
-## change_integer_range {#change_integer_range}
+## change_integer_range 
 
 ```c
 void change_integer_range(int i_subcategory, int range);
@@ -34,7 +34,7 @@ void change_integer_range(int i_subcategory, int range);
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## vlc_config_set {#vlc_config_set}
+## vlc_config_set 
 
 ```c
 void vlc_config_set(int option);
@@ -51,7 +51,7 @@ void vlc_config_set(int option);
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## vlc_config_set {#vlc_config_set}
+## vlc_config_set 
 
 ```c
 void vlc_config_set(int mode);
@@ -68,7 +68,7 @@ void vlc_config_set(int mode);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_config_set {#vlc_config_set}
+## vlc_config_set 
 
 ```c
 void vlc_config_set(int type);
@@ -85,7 +85,7 @@ void vlc_config_set(int type);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_config_set {#vlc_config_set}
+## vlc_config_set 
 
 ```c
 void vlc_config_set(int mode);

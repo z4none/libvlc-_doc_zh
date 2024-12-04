@@ -75,7 +75,7 @@ VLC_API int vlc_rename( const char *oldpath, const char *newpath );
   - `ENOTDIR`：路径中的某个部分不是目录。
   - `EISDIR`：`newpath` 是一个目录，但 `oldpath` 不是。
   - 其他标准 `errno` 值。
-## vlc_closedir {#vlc_closedir}
+## vlc_closedir 
 
 ```c
 static inline int vlc_closedir(DIR *dir)
@@ -102,7 +102,7 @@ static inline int vlc_closedir(DIR *dir)
 - 如果目录流成功关闭，返回 `0`。
 - 如果目录流为空（即 `wdir` 为 `NULL`），也返回 `0`。
 - 如果 `_wclosedir` 函数调用失败，返回 `_wclosedir` 的返回值，通常是一个非零值表示错误。
-## vlc_closedir {#vlc_closedir}
+## vlc_closedir 
 
 ```c
 static inline void vlc_closedir( DIR *dir )

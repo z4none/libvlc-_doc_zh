@@ -1,4 +1,4 @@
-## msg_Warn {#msg_Warn}
+## msg_Warn 
 
 ```c
 void msg_Warn( vlc_object_t *p_filter, const char *psz_format, ... );
@@ -55,7 +55,7 @@ static inline void filter_FlushPictures( filter_t *p_filter )
 
 ### 函数返回值
 该函数没有返回值。
-## msg_Warn {#msg_Warn}
+## msg_Warn 
 
 ```c
 void msg_Warn( vlc_object_t *p_filter, const char *psz_format, ... );

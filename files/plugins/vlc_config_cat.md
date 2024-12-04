@@ -1,4 +1,4 @@
-## vlc_gettext {#vlc_gettext}
+## vlc_gettext 
 
 ```c
 char* vlc_gettext(const char* psz_msgid);
@@ -18,7 +18,7 @@ char* vlc_gettext(const char* psz_msgid);
 - **返回值说明**:
   - 如果成功，返回翻译后的文本字符串。
   - 如果翻译失败或未找到对应的翻译，返回原始的 `psz_msgid` 字符串。
-## vlc_gettext {#vlc_gettext}
+## vlc_gettext 
 
 ```c
 char *vlc_gettext(const char *msgid);

@@ -58,7 +58,7 @@ VLC_API char * EnsureUTF8( char * str );
 
 - **成功**：返回一个指向转换后的 UTF-8 字符串的指针。
 - **失败**：如果转换失败，返回一个指向空字符串的指针。
-## WideCharToMultiByte {#WideCharToMultiByte}
+## WideCharToMultiByte 
 
 ```c
 int WideCharToMultiByte(
@@ -92,7 +92,7 @@ int WideCharToMultiByte(
 ### 函数返回值
 - 如果函数成功，返回值是写入多字节字符串缓冲区的字节数（不包括终止的 null 字符）。
 - 如果函数失败，返回值为 `0`。可以通过调用 `GetLastError` 获取更多错误信息。
-## MultiByteToWideChar {#MultiByteToWideChar}
+## MultiByteToWideChar 
 
 ```c
 int MultiByteToWideChar(
@@ -145,7 +145,7 @@ char* convert_to_wide(int len) {
 ### 返回值
 - **`NULL`**: 如果输入的长度 `len` 为 0，函数将释放内存并返回 `NULL`。
 - **其他情况**: 该函数未明确说明其他情况下的返回值。
-## WideCharToMultiByte {#WideCharToMultiByte}
+## WideCharToMultiByte 
 
 ```c
 int WideCharToMultiByte(
@@ -180,7 +180,7 @@ int WideCharToMultiByte(
 - 如果函数成功，返回值是写入 `lpMultiByteStr` 缓冲区的字节数（不包括终止的 null 字符）。
 - 如果 `lpMultiByteStr` 为 `NULL` 且 `cbMultiByte` 为 `0`，则返回值是转换字符串所需的字节数（包括终止的 null 字符）。
 - 如果函数失败，返回值为 `0`。可以通过调用 `GetLastError` 获取扩展的错误信息。
-## free {#free}
+## free 
 
 ```c
 void free(void *wide);
@@ -197,7 +197,7 @@ void free(void *wide);
 
 ### 函数返回值
 `free` 函数没有返回值。
-## MultiByteToWideChar {#MultiByteToWideChar}
+## MultiByteToWideChar 
 
 ```c
 int MultiByteToWideChar(
@@ -228,7 +228,7 @@ int MultiByteToWideChar(
 - 如果函数成功，返回值是写入缓冲区的宽字符数（不包括终止符）。
 - 如果 `lpWideCharStr` 为 `NULL` 且 `cchWideChar` 为 `0`，则返回值是转换整个字符串所需的宽字符数（包括终止符）。
 - 如果函数失败，返回值为 `0`。可以通过调用 `GetLastError` 获取详细的错误信息。
-## free {#free}
+## free 
 
 ```c
 void free(void *wide);

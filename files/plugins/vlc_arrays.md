@@ -15,7 +15,7 @@ void free(void *p_ar);
 
 ### 函数返回值
 `free` 函数没有返回值。
-## free {#free}
+## free 
 
 ```c
 void free(void *ptr);
@@ -55,7 +55,7 @@ void TAB_FIND(int *count, TAB *tab, void *p, int *i_index);
 
 - `count`：返回找到的元素数量。
 - `i_index`：返回找到的元素的索引位置。如果未找到，则返回 `-1`。
-## free {#free}
+## free 
 
 ```c
 void free(void *ptr);
@@ -129,7 +129,7 @@ while( low <= high ) {
 
 ### 返回值
 该宏没有返回值。如果内存分配失败，程序将调用 `abort()` 函数中止执行。
-## _ARRAY_GROW1 {#_ARRAY_GROW1}
+## _ARRAY_GROW1 
 
 ```c
 define _ARRAY_GROW1(array) {                                               \
@@ -150,7 +150,7 @@ define _ARRAY_GROW1(array) {                                               \
 
 ### 函数返回值
 该宏没有返回值。它通过调用 `_ARRAY_ALLOC` 宏来修改数组的内存分配。
-## _ARRAY_GROW1 {#_ARRAY_GROW1}
+## _ARRAY_GROW1 
 
 ```c
 void _ARRAY_GROW1(void *array);
@@ -167,7 +167,7 @@ void _ARRAY_GROW1(void *array);
 
 ### 函数返回值
 该函数没有返回值。如果内存分配失败，函数会触发一个错误，通常会导致程序终止。
-## _ARRAY_GROW1 {#_ARRAY_GROW1}
+## _ARRAY_GROW1 
 
 ```c
 void _ARRAY_GROW1(void *array);
@@ -184,7 +184,7 @@ void _ARRAY_GROW1(void *array);
 
 ### 函数返回值
 该函数没有返回值。
-## _ARRAY_SHRINK {#_ARRAY_SHRINK}
+## _ARRAY_SHRINK 
 
 ```c
 define _ARRAY_SHRINK(array) {                                              \
@@ -204,7 +204,7 @@ define _ARRAY_SHRINK(array) {                                              \
 
 ### 函数返回值
 该宏没有返回值。它通过重新分配数组的空间来调整数组的大小。
-## _ARRAY_SHRINK(array) {#_ARRAY_SHRINK}
+## _ARRAY_SHRINK(array) 
 
 ```c
 void _ARRAY_SHRINK(void *array);
@@ -485,7 +485,7 @@ unsigned int hash_string(const char *psz_string)
 - **返回值说明**:
   - 如果 `psz_string` 为 `NULL`，则返回 `0`。
   - 否则，返回计算得到的字符串的哈希值。
-## vlc_dictionary_init {#vlc_dictionary_init}
+## vlc_dictionary_init 
 
 ```c
 static inline void vlc_dictionary_init(vlc_dictionary_t *p_dict, int i_size)
@@ -514,7 +514,7 @@ static inline void vlc_dictionary_init(vlc_dictionary_t *p_dict, int i_size)
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_dictionary_clear {#vlc_dictionary_clear}
+## vlc_dictionary_clear 
 
 ```c
 void vlc_dictionary_clear(vlc_dictionary_t *p_dict, void (*pf_free)(void *, void *), void *p_obj);
@@ -533,7 +533,7 @@ void vlc_dictionary_clear(vlc_dictionary_t *p_dict, void (*pf_free)(void *, void
 
 ### 函数返回值
 该函数没有返回值。
-## free {#free}
+## free 
 
 ```c
 void free(void *ptr);
@@ -626,7 +626,7 @@ vlc_dictionary_all_keys( const vlc_dictionary_t * p_dict )
 ### 函数返回值
 - **成功**：返回一个字符串数组，其中包含字典中所有键的副本。数组的最后一个元素为 `NULL`。
 - **失败**：如果内存分配失败，返回 `NULL`。
-## vlc_dictionary_init {#vlc_dictionary_init}
+## vlc_dictionary_init 
 
 ```c
 void vlc_dictionary_init( vlc_dictionary_t *p_dict, int i_preallocate );
@@ -644,7 +644,7 @@ void vlc_dictionary_init( vlc_dictionary_t *p_dict, int i_preallocate );
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_dictionary_init {#vlc_dictionary_init}
+## vlc_dictionary_init 
 
 ```c
 void vlc_dictionary_init( vlc_dictionary_t *p_dict, unsigned int i_size );
@@ -682,7 +682,7 @@ void __vlc_dictionary_insert(vlc_dictionary_t *p_dict, const char *psz_key, void
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## vlc_dictionary_clear {#vlc_dictionary_clear}
+## vlc_dictionary_clear 
 
 ```c
 void vlc_dictionary_clear(vlc_dictionary_t *p_dict, void (*pf_free_data)(void *), void *p_data);
@@ -720,7 +720,7 @@ static inline void vlc_dictionary_insert(vlc_dictionary_t *p_dict, const char *p
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## free {#free}
+## free 
 
 ```c
 void free(void *ptr);
@@ -737,7 +737,7 @@ void free(void *ptr);
 
 ### 函数返回值
 `free` 函数没有返回值。
-## free {#free}
+## free 
 
 ```c
 void free(void *p_entry);

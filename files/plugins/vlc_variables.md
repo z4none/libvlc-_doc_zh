@@ -1,4 +1,4 @@
-## var_Create {#var_Create}
+## var_Create 
 
 ```c
 VLC_API int var_Create( vlc_object_t *p_this, const char *psz_name, int i_type );
@@ -738,7 +738,7 @@ static inline float var_CreateGetFloat( vlc_object_t *p_obj, const char *psz_nam
 
 ### 函数返回值
 该函数返回创建或获取的浮点型变量的值。如果变量不存在且无法创建，则返回值可能为默认值或未定义。
-## var_Create {#var_Create}
+## var_Create 
 
 ```c
 int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
@@ -759,7 +759,7 @@ int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
 
 - **成功**：返回 `VLC_SUCCESS`，表示变量创建成功。
 - **失败**：返回 `VLC_EGENERIC`，表示变量创建失败。
-## var_GetString {#var_GetString}
+## var_GetString 
 
 ```c
 char *var_GetString( vlc_object_t *p_obj, const char *psz_name );
@@ -780,7 +780,7 @@ char *var_GetString( vlc_object_t *p_obj, const char *psz_name );
 - 如果变量不存在或不是字符串类型，返回 `NULL`。
 
 注意：返回的字符串指针是动态分配的，调用者需要在使用完毕后调用 `free()` 释放内存。
-## var_Create {#var_Create}
+## var_Create 
 
 ```c
 int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
@@ -800,7 +800,7 @@ int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
 ### 函数返回值
 - 成功时返回 `VLC_SUCCESS`。
 - 如果发生错误，返回 `VLC_EGENERIC`。
-## var_GetNonEmptyString {#var_GetNonEmptyString}
+## var_GetNonEmptyString 
 
 ```c
 char *var_GetNonEmptyString( vlc_object_t *p_obj, const char *psz_name );
@@ -819,7 +819,7 @@ char *var_GetNonEmptyString( vlc_object_t *p_obj, const char *psz_name );
 ### 函数返回值
 - **成功**：返回指向非空字符串的指针。
 - **失败**：如果变量不存在或为空字符串，返回 `NULL`。
-## var_Create {#var_Create}
+## var_Create 
 
 ```c
 int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
@@ -936,7 +936,7 @@ static inline float var_CreateGetFloatCommand( vlc_object_t *p_obj, const char *
 
 ### 函数返回值
 返回创建的浮点型变量的值。
-## var_Create {#var_Create}
+## var_Create 
 
 ```c
 int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
@@ -957,7 +957,7 @@ int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
 - 成功时返回 `VLC_SUCCESS`。
 - 如果变量已经存在，则返回 `VLC_EGENERIC`。
 - 如果参数无效或内存分配失败，则返回 `VLC_ENOMEM`。
-## var_GetString {#var_GetString}
+## var_GetString 
 
 ```c
 char *var_GetString( vlc_object_t *p_obj, const char *psz_name );
@@ -976,7 +976,7 @@ char *var_GetString( vlc_object_t *p_obj, const char *psz_name );
 ### 函数返回值
 - **成功**：返回一个指向字符串值的指针。该字符串是动态分配的，调用者需要在使用完毕后调用 `free()` 释放内存。
 - **失败**：如果指定的变量不存在或不是字符串类型，函数将返回 `NULL`。
-## var_Create {#var_Create}
+## var_Create 
 
 ```c
 int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
@@ -996,7 +996,7 @@ int var_Create( vlc_object_t *p_obj, const char *psz_name, int i_type );
 ### 函数返回值
 - 如果变量成功创建，函数返回 `VLC_SUCCESS`。
 - 如果发生错误，函数返回 `VLC_EGENERIC`。
-## var_GetNonEmptyString {#var_GetNonEmptyString}
+## var_GetNonEmptyString 
 
 ```c
 char *var_GetNonEmptyString( vlc_object_t *p_obj, const char *psz_name );

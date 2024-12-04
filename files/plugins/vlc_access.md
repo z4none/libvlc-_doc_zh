@@ -74,7 +74,8 @@ static inline void access_InitFields(access_t *p_a)
 
 ### 函数返回值
 该函数没有返回值。
-## access_InitFields {#access_InitFields}
+
+## access_InitFields {#access_InitFields1}
 
 ```c
 void access_InitFields( access_t *p_access );
@@ -91,7 +92,7 @@ void access_InitFields( access_t *p_access );
 
 ### 函数返回值
 该函数没有返回值。
-## ACCESS_SET_CALLBACKS {#ACCESS_SET_CALLBACKS}
+## ACCESS_SET_CALLBACKS {#ACCESS_SET_CALLBACKS1}
 
 ```c
 void ACCESS_SET_CALLBACKS(Read, NULL, Control, Seek);
@@ -111,7 +112,7 @@ void ACCESS_SET_CALLBACKS(Read, NULL, Control, Seek);
 
 ### 函数返回值
 该函数没有返回值。
-## access_InitFields {#access_InitFields}
+## access_InitFields {#access_InitFields2}
 
 ```c
 void access_InitFields( access_t *p_access );

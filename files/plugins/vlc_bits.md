@@ -102,7 +102,7 @@ void parse_byte(struct Stream *s)
 
 ### 返回值
 该函数没有返回值。
-## return {#return}
+## return 
 
 ```c
 int return(int i_result);
@@ -119,7 +119,7 @@ int return(int i_result);
 
 ### 返回值
 该函数返回传入的 `i_result` 值。具体返回值取决于传入的参数 `i_result`。
-## return {#return}
+## return 
 
 ```c
 int return(int i_result);

@@ -16,7 +16,7 @@ block_t *block_Alloc(size_t size);
 - 成功时返回新创建的 `block_t` 指针。
 - 失败时返回 `NULL`。
 
-## block_Release {#block_Release}
+## block_Release 
 
 ```c
 void block_Release(block_t *block);
@@ -88,7 +88,7 @@ void block_Init(block_t *block, void *data, size_t size);
 
 ### 返回值
 无返回值。
-## block_CopyProperties {#block_CopyProperties}
+## block_CopyProperties 
 
 ```c
 static inline void block_CopyProperties(block_t *dst, block_t *src)
@@ -113,7 +113,7 @@ static inline void block_CopyProperties(block_t *dst, block_t *src)
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## block_CopyProperties {#block_CopyProperties}
+## block_CopyProperties 
 
 ```c
 void block_CopyProperties( block_t *p_dup, const block_t *p_block );
@@ -150,7 +150,7 @@ void *memcpy(void *dest, const void *src, size_t n);
 
 ### 函数返回值
 `memcpy` 函数返回 `dest` 的值，即目标内存区域的指针。
-## block_Release {#block_Release}
+## block_Release 
 
 ```c
 static inline void block_Release(block_t *p_block)
@@ -223,7 +223,7 @@ static inline void block_ChainLastAppend(block_t ***ppp_last, block_t *p_block)
 
 ### 函数返回值
 该函数没有返回值。
-## block_ChainRelease {#block_ChainRelease}
+## block_ChainRelease 
 
 ```c
 static inline void block_ChainRelease(block_t *p_block)
@@ -240,7 +240,7 @@ static inline void block_ChainRelease(block_t *p_block)
 
 ### 函数返回值
 该函数没有返回值。
-## block_ChainExtract {#block_ChainExtract}
+## block_ChainExtract 
 
 ```c
 static size_t block_ChainExtract(block_t *p_list, void *p_data, size_t i_max)
@@ -261,7 +261,7 @@ static size_t block_ChainExtract(block_t *p_list, void *p_data, size_t i_max)
 - **size_t**: 返回实际复制的字节数。
   - 如果链表为空或 `i_max` 为 0，则返回 0。
   - 否则，返回实际从链表中提取并复制到 `p_data` 中的字节数。
-## block_ChainProperties {#block_ChainProperties}
+## block_ChainProperties 
 
 ```c
 static inline void block_ChainProperties(block_t *p_list, int *pi_count, size_t *pi_size, mtime_t *pi_length)
@@ -281,7 +281,7 @@ static inline void block_ChainProperties(block_t *p_list, int *pi_count, size_t 
 
 ### 函数返回值
 该函数没有返回值。所有计算结果通过传入的指针参数返回。
-## block_ChainProperties {#block_ChainProperties}
+## block_ChainProperties 
 
 ```c
 void block_ChainProperties(p_list, NULL, &i_total, &i_length);
@@ -301,7 +301,7 @@ void block_ChainProperties(p_list, NULL, &i_total, &i_length);
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## block_ChainExtract {#block_ChainExtract}
+## block_ChainExtract 
 
 ```c
 void block_ChainExtract( p_list, g->p_buffer, g->i_buffer );
@@ -320,7 +320,7 @@ void block_ChainExtract( p_list, g->p_buffer, g->i_buffer );
 
 ### 返回值
 该函数没有返回值（`void`）。
-## block_ChainRelease {#block_ChainRelease}
+## block_ChainRelease 
 
 ```c
 void block_ChainRelease(void *p_list);

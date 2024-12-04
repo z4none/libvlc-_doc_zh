@@ -130,7 +130,7 @@ VLC_API void vlm_MessageDelete( vlm_message_t * );
 
 ### 函数返回值
 该函数没有返回值。
-## vlm_media_Init {#vlm_media_Init}
+## vlm_media_Init 
 
 ```c
 static inline void vlm_media_Init( vlm_media_t *p_media )
@@ -186,7 +186,7 @@ static inline void vlm_media_Clean( vlm_media_t *p_media )
 
 ### 函数返回值
 该函数没有返回值。
-## vlm_media_Init {#vlm_media_Init}
+## vlm_media_Init 
 
 ```c
 void vlm_media_Init( vlm_media_t *p_media );
@@ -238,7 +238,7 @@ void vlm_media_Copy( vlm_media_t *p_dst, const vlm_media_t *p_src );
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## vlm_media_instance_Init {#vlm_media_instance_Init}
+## vlm_media_instance_Init 
 
 ```c
 static inline void vlm_media_instance_Init( vlm_media_instance_t *p_instance )
@@ -271,7 +271,7 @@ static inline void vlm_media_instance_Clean( vlm_media_instance_t *p_instance )
 
 ### 函数返回值
 该函数没有返回值。
-## vlm_media_instance_Init {#vlm_media_instance_Init}
+## vlm_media_instance_Init 
 
 ```c
 void vlm_media_instance_Init( vlm_media_instance_t *p_instance );

@@ -167,7 +167,7 @@ VLC_API bool input_item_HasErrorWhenReading( input_item_t * );
 ### 函数返回值
 - **`true`**: 表示在读取输入项时发生了错误。
 - **`false`**: 表示在读取输入项时没有发生错误。
-## input_item_SetMeta {#input_item_SetMeta}
+## input_item_SetMeta 
 
 ```c
 VLC_API void input_item_SetMeta( input_item_t *p_i, vlc_meta_type_t meta_type, const char *psz_val );
@@ -315,7 +315,7 @@ void free(void *psz_meta);
 
 ### 函数返回值
 `free` 函数没有返回值。
-## input_item_GetMeta {#input_item_GetMeta}
+## input_item_GetMeta 
 
 ```c
 const char *input_item_GetMeta( input_item_t *p_item, vlc_meta_type_t meta_type );
@@ -334,7 +334,7 @@ const char *input_item_GetMeta( input_item_t *p_item, vlc_meta_type_t meta_type 
 ### 函数返回值
 - 如果成功获取元数据，返回指向元数据字符串的指针。
 - 如果指定的元数据类型不存在或未设置，返回 `NULL`。
-## input_item_SetMeta {#input_item_SetMeta}
+## input_item_SetMeta 
 
 ```c
 void input_item_SetMeta(input_item_t *p_input, vlc_meta_t name, const char *val);
@@ -353,7 +353,7 @@ void input_item_SetMeta(input_item_t *p_input, vlc_meta_t name, const char *val)
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## input_item_GetMeta {#input_item_GetMeta}
+## input_item_GetMeta 
 
 ```c
 char *input_item_GetMeta(input_item_t *p_input, vlc_meta_t name);
@@ -492,7 +492,7 @@ VLC_API int libvlc_ArtRequest(libvlc_int_t *p_libvlc, input_item_t *p_item,
 
 - **返回值为 `0`**：表示请求成功。
 - **返回值为负数**：表示请求失败，具体错误码取决于实现。
-## input_item_t {#input_item_t}
+## input_item_t 
 
 ### 函数定义
 ```c
@@ -538,7 +538,7 @@ struct info_category_t
 
 ### 返回值
 该结构体没有返回值，因为它是一个定义结构体。
-## input_item_t {#input_item_t}
+## input_item_t 
 
 ```c
 struct input_item_t

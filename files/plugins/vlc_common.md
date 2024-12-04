@@ -552,7 +552,7 @@ static void vlc_free(void *ptr)
 
 ### 函数返回值
 该函数没有返回值。
-## abort {#abort}
+## abort 
 
 ```c
 void abort(void);
@@ -570,7 +570,7 @@ void abort(void);
 
 ### 函数返回值
 `abort` 函数不会返回任何值，因为它会导致进程终止。
-## abort {#abort}
+## abort 
 
 ```c
 void abort(void);
@@ -588,7 +588,7 @@ void abort(void);
 
 ### 返回值
 `abort` 函数不会返回，因为它会导致程序立即终止。
-## abort {#abort}
+## abort 
 
 ```c
 void abort(void);
@@ -604,7 +604,7 @@ void abort(void);
 
 ### 函数返回值
 `abort` 函数不会返回，因为它会导致程序的终止。调用 `abort` 后，程序将立即终止，不会返回到调用点。
-## abort {#abort}
+## abort 
 
 ```c
 void abort(void);

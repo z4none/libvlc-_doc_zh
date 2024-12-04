@@ -49,7 +49,7 @@ VLC_API void vlc_mutex_destroy(vlc_mutex_t *p_mutex);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_mutex_lock {#vlc_mutex_lock}
+## vlc_mutex_lock 
 
 ```c
 VLC_API void vlc_mutex_lock(vlc_mutex_t *mutex);
@@ -66,7 +66,7 @@ VLC_API void vlc_mutex_lock(vlc_mutex_t *mutex);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_mutex_unlock {#vlc_mutex_unlock}
+## vlc_mutex_unlock 
 
 ```c
 VLC_API void vlc_mutex_unlock( vlc_mutex_t * );
@@ -463,7 +463,7 @@ VLC_API void vlc_join(vlc_thread_t, void **);
 
 ### 函数返回值
 该函数没有返回值。如果线程成功终止并被回收，函数将正常返回。如果线程已经终止，函数也会立即返回。
-## vlc_control_cancel {#vlc_control_cancel}
+## vlc_control_cancel 
 
 ```c
 VLC_API void vlc_control_cancel(int cmd, ...);
@@ -702,7 +702,7 @@ VLC_API void vlc_testcancel(void);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_control_cancel {#vlc_control_cancel}
+## vlc_control_cancel 
 
 ```c
 void vlc_control_cancel(vlc_cleanup_t *cl)
@@ -721,7 +721,7 @@ void vlc_control_cancel(vlc_cleanup_t *cl)
 ### 函数返回值
 
 该函数没有返回值。
-## vlc_control_cancel {#vlc_control_cancel}
+## vlc_control_cancel 
 
 ```c
 void vlc_control_cancel(vlc_cleanup_t *cl);
@@ -738,7 +738,7 @@ void vlc_control_cancel(vlc_cleanup_t *cl);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_poll {#vlc_poll}
+## vlc_poll 
 
 ```c
 static inline int vlc_poll (struct pollfd *fds, unsigned nfds, int timeout)
@@ -758,7 +758,7 @@ static inline int vlc_poll (struct pollfd *fds, unsigned nfds, int timeout)
 ### 返回值
 - 如果成功，返回值为 `vlc_poll_os2` 函数的返回值。
 - 如果加载 `vlc_poll_os2` 函数失败，返回值为 -1。
-## vlc_poll {#vlc_poll}
+## vlc_poll 
 
 ```c
 static inline int vlc_poll(struct pollfd *fds, unsigned nfds, int timeout)
@@ -801,7 +801,7 @@ static inline void vlc_cleanup_lock (void *lock)
 ### 函数返回值
 
 该函数没有返回值。
-## vlc_mutex_lock {#vlc_mutex_lock}
+## vlc_mutex_lock 
 
 ```c
 void vlc_mutex_lock(vlc_mutex_t *lock);
@@ -818,7 +818,7 @@ void vlc_mutex_lock(vlc_mutex_t *lock);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_mutex_unlock {#vlc_mutex_unlock}
+## vlc_mutex_unlock 
 
 ```c
 void vlc_mutex_unlock(vlc_mutex_t *lock);

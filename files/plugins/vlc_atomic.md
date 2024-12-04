@@ -15,7 +15,7 @@ void __sync_synchronize(void);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_lock {#vlc_global_lock}
+## vlc_global_lock 
 
 ```c
 void vlc_global_lock(unsigned);
@@ -32,7 +32,7 @@ void vlc_global_lock(unsigned);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_unlock {#vlc_global_unlock}
+## vlc_global_unlock 
 
 ```c
 void vlc_global_unlock(unsigned);
@@ -49,7 +49,7 @@ void vlc_global_unlock(unsigned);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_lock {#vlc_global_lock}
+## vlc_global_lock 
 
 ```c
 void vlc_global_lock(unsigned);
@@ -66,7 +66,7 @@ void vlc_global_lock(unsigned);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_unlock {#vlc_global_unlock}
+## vlc_global_unlock 
 
 ```c
 void vlc_global_unlock(unsigned);
@@ -83,7 +83,7 @@ void vlc_global_unlock(unsigned);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_lock {#vlc_global_lock}
+## vlc_global_lock 
 
 ```c
 void vlc_global_lock(unsigned);
@@ -100,7 +100,7 @@ void vlc_global_lock(unsigned);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_unlock {#vlc_global_unlock}
+## vlc_global_unlock 
 
 ```c
 void vlc_global_unlock(int);
@@ -134,7 +134,7 @@ void vlc_global_lock(unsigned);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_unlock {#vlc_global_unlock}
+## vlc_global_unlock 
 
 ```c
 void vlc_global_unlock(VLC_ATOMIC_MUTEX);
@@ -151,7 +151,7 @@ void vlc_global_unlock(VLC_ATOMIC_MUTEX);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_lock {#vlc_global_lock}
+## vlc_global_lock 
 
 ```c
 void vlc_global_lock(unsigned);
@@ -168,7 +168,7 @@ void vlc_global_lock(unsigned);
 
 ### 函数返回值
 该函数没有返回值。
-## vlc_global_unlock {#vlc_global_unlock}
+## vlc_global_unlock 
 
 ```c
 void vlc_global_unlock(unsigned);

@@ -49,7 +49,7 @@ static inline void block_BytestreamEmpty( block_bytestream_t *p_bytestream )
 
 ### 函数返回值
 该函数没有返回值。
-## block_BytestreamFlush {#block_BytestreamFlush}
+## block_BytestreamFlush 
 
 ```c
 static inline void block_BytestreamFlush( block_bytestream_t *p_bytestream )
@@ -84,7 +84,7 @@ static inline void block_BytestreamPush( block_bytestream_t *p_bytestream, block
 
 ### 函数返回值
 该函数没有返回值（`void`）。
-## block_BytestreamFlush {#block_BytestreamFlush}
+## block_BytestreamFlush 
 
 ```c
 void block_BytestreamFlush(block_bytestream_t *p_bytestream);
@@ -121,7 +121,7 @@ if( p_block == NULL )
 ### 返回值
 - **`NULL`**: 如果 `p_block` 为 `NULL`，则返回 `NULL`。
 - **无返回值**: 如果 `p_block` 不为 `NULL`，则函数不返回任何值，继续执行后续代码。
-## 函数说明 {#function_name}
+## 函数说明 
 
 ```c
 block_t* function_name(block_t* p_block, bytestream_t* p_bytestream)
@@ -189,7 +189,7 @@ int vlc_bytestream_skip_to_next_block(vlc_bytestream_t *p_bytestream)
 
 - **`VLC_SUCCESS`**: 成功找到并跳转到下一个非空块。
 - **`其他值`**: 如果没有找到下一个非空块，函数可能返回其他错误码（未明确说明）。
-## read_byte {#read_byte}
+## read_byte 
 
 ```c
 int read_byte(bytestream_t *p_bytestream, uint8_t *p_data)
@@ -209,7 +209,7 @@ int read_byte(bytestream_t *p_bytestream, uint8_t *p_data)
 
 - **VLC_SUCCESS**：成功读取一个字节。
 - **其他值**：读取失败，可能是字节流中没有更多字节可读。
-## vlc_bytestream_ReadByte {#vlc_bytestream_ReadByte}
+## vlc_bytestream_ReadByte 
 
 ```c
 int vlc_bytestream_ReadByte(block_t **p_bytestream, uint8_t *p_data)
@@ -229,7 +229,7 @@ int vlc_bytestream_ReadByte(block_t **p_bytestream, uint8_t *p_data)
 
 - **`VLC_SUCCESS`**: 成功读取一个字节并存储在 `p_data` 中。
 - **`VLC_EGENERIC`**: 如果字节流中没有可读取的数据，函数将返回此错误码。
-## read_byte {#read_byte}
+## read_byte 
 
 ```c
 int read_byte(bytestream_t *p_bytestream, uint8_t *p_data);
@@ -249,7 +249,7 @@ int read_byte(bytestream_t *p_bytestream, uint8_t *p_data);
 
 - **`VLC_SUCCESS`**: 成功读取一个字节。
 - **其他值**: 字节流中没有更多数据，返回错误码。
-## vlc_bytestream_ReadByte {#vlc_bytestream_ReadByte}
+## vlc_bytestream_ReadByte 
 
 ```c
 int vlc_bytestream_ReadByte(vlc_bytestream_t *p_bytestream, uint8_t *p_data)
@@ -308,7 +308,7 @@ static inline int block_SkipBytes( block_bytestream_t *p_bytestream, size_t i_da
 ### 函数返回值
 - **`VLC_SUCCESS`**: 成功跳过指定数量的字节。
 - **`VLC_EGENERIC`**: 字节流中没有足够的字节可供跳过。
-## for 循环 {#for-loop}
+## for 循环 
 
 ```c
 for( p_block = p_bytestream->p_block;
@@ -336,7 +336,7 @@ for( p_block = p_bytestream->p_block;
 
 ### 返回值
 该 `for` 循环没有显式的返回值。循环的目的是遍历链表并更新相关变量，直到 `i_size` 变为 0 或 `p_block` 为 `NULL`。
-## vlc_egeneric {#vlc_egeneric}
+## vlc_egeneric 
 
 ```c
 int vlc_egeneric(void);
@@ -356,7 +356,7 @@ int vlc_egeneric(void);
 
 - **返回值**: `VLC_EGENERIC`
   - **描述**: 当 `i_size` 为非零值时，函数返回 `VLC_EGENERIC`，表示操作无法继续进行。
-## 函数说明 {#function_name}
+## 函数说明 
 
 ```c
 for( p_block = p_bytestream->p_block;
@@ -395,7 +395,7 @@ for( p_block = p_bytestream->p_block;
 ### 函数返回值
 
 该函数没有显式的返回值。函数通过修改 `p_data` 指针的位置来间接返回复制的数据。如果 `i_size` 在遍历过程中变为 0，则表示所需的数据量已经复制完毕，函数将退出循环。
-## for_loop {#for_loop}
+## for_loop 
 
 ```c
 for( p_block = p_bytestream->p_block;
@@ -427,7 +427,7 @@ for( p_block = p_bytestream->p_block;
 
 1. `p_block` 为 `NULL`，表示已经遍历完所有块。
 2. `i_size` 为 `0`，表示所需的字节数已经复制完毕。
-## vlc_egeneric {#vlc_egeneric}
+## vlc_egeneric 
 
 ```c
 int vlc_egeneric(void);
@@ -444,7 +444,7 @@ int vlc_egeneric(void);
 
 ### 返回值
 - **VLC_EGENERIC**: 当 `i_size` 不为零时，表示数据不足，函数返回 `VLC_EGENERIC` 错误代码。
-## 函数说明 {#function_name}
+## 函数说明 
 
 ```c
 for( p_block = p_bytestream->p_block;
@@ -481,7 +481,7 @@ for( p_block = p_bytestream->p_block;
 ### 函数返回值
 
 该函数没有显式的返回值。它通过修改 `p_data` 指针的位置来表示已复制的数据量。如果 `i_size` 在循环结束时为 0，则表示所有需要复制的数据都已成功复制。
-## for_loop {#for_loop}
+## for_loop 
 
 ```c
 for( p_block = p_bytestream->p_block;
@@ -510,7 +510,7 @@ for( p_block = p_bytestream->p_block;
 
 ### 函数返回值
 该代码片段没有显式的返回值，因为它是一个循环结构。循环的终止条件是 `p_block` 为 `NULL` 或 `i_size` 变为 0。
-## vlc_egeneric {#vlc_egeneric}
+## vlc_egeneric 
 
 ```c
 int vlc_egeneric(void);
@@ -530,7 +530,7 @@ int vlc_egeneric(void);
 
 - **返回值**: `VLC_EGENERIC`
   - **描述**: 表示数据不足的错误代码。
-## for_loop {#for_loop}
+## for_loop 
 
 ```c
 for( p_block = p_bytestream->p_block;
@@ -560,7 +560,7 @@ for( p_block = p_bytestream->p_block;
 
 ### 函数返回值
 该代码片段没有显式的返回值，因为它是一个循环结构，主要用于遍历和处理数据块。循环的退出条件是 `i_size` 变为 0 或 `p_block` 为 `NULL`。
-## function_name {#function_name}
+## function_name 
 
 ```c
 for( ; p_block != NULL; p_block = p_block->p_next )
@@ -595,7 +595,7 @@ for( ; p_block != NULL; p_block = p_block->p_next )
 
 ### 函数返回值
 该函数没有显式的返回值，其主要功能是通过修改 `p_data` 指针和 `i_size` 变量来实现数据的复制。当 `i_size` 变为0时，表示所有数据已复制完成，循环终止。
-## for 循环 {#for-loop}
+## for 循环 
 
 ```c
 for( p_block = p_bytestream->p_block;
@@ -620,7 +620,7 @@ for( p_block = p_bytestream->p_block;
 该循环没有显式的返回值，但可以通过 `i_size` 的值来判断循环的执行情况：
 - 如果 `i_size` 在循环结束后小于 0，说明在某个块的缓冲区大小超过了 `i_size`。
 - 如果 `i_size` 在循环结束后大于或等于 0，说明所有块的缓冲区大小之和不超过 `i_size`。
-## vlc_egeneric {#vlc_egeneric}
+## vlc_egeneric 
 
 ```c
 int vlc_egeneric(int i_size);
